@@ -1,0 +1,14 @@
+version: "3.7"
+
+networks:
+  scalian_training-net:
+    driver: bridge
+
+
+services:
+  ## TO BUILD AND RUN APP LOCALLY
+  java_app:
+    image: adrianscalian/scalian_training_java-app:1.0-SNAPSHOT
+    container_name: java_app
+    ports:
+      - 8084:8080
